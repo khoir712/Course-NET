@@ -176,8 +176,12 @@ for (let i = 0; i < score.length; i++) {
     min = score[i];
   }
 }
-let result = [
-  ["MAXIMAL", max],
-  ["MINIMAL", min],
-];
-console.log(result);
+
+console.log("Max", +max);
+console.log("Min", +min);
+
+// let result = [
+//   ["Nilai MAXIMAL", max],
+//   ["Nilai MINIMAL", min],
+// ];
+// console.log(result);
