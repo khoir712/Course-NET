@@ -5,12 +5,12 @@
 //     }
 
 /**Study Case 1
- * 
+ *
  * Cetak angka dari 1 sampai 10 dan cek apakah bilangan genap atau ganjil
- * 
+ *
  * contoh
  * var number=10;
- * 
+ *
  * results
  * 1 adalah ganji
  * 2 adalah genap
@@ -18,19 +18,19 @@
  *  ....
  * 9 adalah ganji
  * 10 adalah genap
- * 
- * 
+ *
+ *
  */
- 
+
 /**Study Case 2
- * 
+ *
  * print sebuah string menjadi huruf besar dan kecil.
- * 
+ *
  * contoh=nasi kotak
- * 
+ *
  * result
- * NaSi kOtAk 
- * 
+ * NaSi kOtAk
+ *
  */
 //Jawaban Case 1
 // var num = 10;
@@ -74,7 +74,7 @@ temen
 kerja
 
 
-*/ 
+*/
 
 //Jawabanya ke 1
 // var pantun = "Makan siang bareng temen kerja";
@@ -83,7 +83,7 @@ kerja
 // for (var i = 0; i < kata.length; i++) {
 //   console.log(kata[i]);
 // }
- // Jawabanya ke 2
+// Jawabanya ke 2
 // var pantun = "makan siang bareng temen kerja";
 // var temp = "";
 
@@ -102,19 +102,19 @@ kerja
 
 /**
  * Case 4
- * 
+ *
  * tentukan faktor dari sebuah bilangan
  * angka 10 terdiri dari faktor 1 2 5 10
- * 
+ *
  * contoh
  * var n= 10
- * 
+ *
  * result
  * 1
  * 2
  * 5
  * 10
-*/
+ */
 
 //Jawabanya Case 4 ke 1
 // var n = 15;
@@ -127,16 +127,16 @@ kerja
 
 // Study case 5
 /**
- * print sebuah Kotak 
- * 
+ * print sebuah Kotak
+ *
  * contoh
  * Var x= 3;
- * 
+ *
  * result
  * ###
  * ###
  * ###
- * 
+ *
  */
 //Jawaban
 // var x = 3;
@@ -161,19 +161,18 @@ kerja
 //     temp = "";
 // }
 
-
-// Study case 6 
+// Study case 6
 /**
  * print sebuah tangga
- *  
+ *
  * contoh
  * Var x= 3;
- * 
+ *
  * result
  * #
  * ##
  * ###
- * 
+ *
  */
 
 // var x = 5;
@@ -184,19 +183,38 @@ kerja
 //     temp += j+1;
 //   }
 //   console.log(temp);
-//   temp = "";    
+//   temp = "";
 
 // }
-// Study case 7 
+// Study case 7
 /**
- * print sebuah Kotak 
- * 
+ * print sebuah Kotak  yang berisi kosong
+ *
  * contoh
- * Var x= 3;
- * 
+ * Var x= 5;
+ *
  * result
- * ###
- * ###
- * ###
- * 
+ * #####
+ * #   #
+ * #   #
+ * #   #
+ * #####
  */
+var number = 5;
+var temp = "";
+
+for (var i = 0; i < number; i++) {
+  for (var j = 0; j < number; j++) {
+    if (i === 0 || i === number - 1) {
+      temp = temp + "#";
+    } else {
+      if (j === 0 || j === number - 1) {
+        temp = temp + "#";
+      } else {
+        temp = temp + " ";
+      }
+    }
+  }
+  console.log(temp);
+  temp = "";
+}
