@@ -164,21 +164,21 @@
  *
  */
 
-let score = [77, 2, 30, 15, 35];
-let max = score[0];
-let min = score[0];
+// let score = [77, 2, 30, 15, 35];
+// let max = score[0];
+// let min = score[0];
 
-for (let i = 0; i < score.length; i++) {
-  if (score[i] > max) {
-    max = score[i];
-  }
-  if (score[i] < min) {
-    min = score[i];
-  }
-}
+// for (let i = 0; i < score.length; i++) {
+//   if (score[i] > max) {
+//     max = score[i];
+//   }
+//   if (score[i] < min) {
+//     min = score[i];
+//   }
+// }
 
-console.log("Max", +max);
-console.log("Min", +min);
+// console.log("Max", +max);
+// console.log("Min", +min);
 
 // let result = [
 //   ["Nilai MAXIMAL", max],
