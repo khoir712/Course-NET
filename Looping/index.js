@@ -200,21 +200,45 @@ kerja
  * #   #
  * #####
  */
-var number = 5;
-var temp = "";
+// var number = 5;
+// var temp = "";
 
-for (var i = 0; i < number; i++) {
-  for (var j = 0; j < number; j++) {
-    if (i === 0 || i === number - 1) {
-      temp = temp + "#";
-    } else {
-      if (j === 0 || j === number - 1) {
-        temp = temp + "#";
-      } else {
-        temp = temp + " ";
-      }
+// for (var i = 0; i < number; i++) {
+//   for (var j = 0; j < number; j++) {
+//     if (i === 0 || i === number - 1) {
+//       temp = temp + "#";
+//     } else {
+//       if (j === 0 || j === number - 1) {
+//         temp = temp + "#";
+//       } else {
+//         temp = temp + " ";
+//       }
+//     }
+//   }
+//   console.log(temp);
+//   temp = "";
+// }
+
+var number = 5;
+
+for (var i = 1; i <= number; i++) {
+  var row = "";
+
+  if (i === 1 || i === number) {
+    // Mencetak baris pertama dan terakhir dengan karakter "#"
+    for (var j = 1; j <= number; j++) {
+      row += "#";
     }
+  } else {
+    // Mencetak baris-baris di antara baris pertama dan terakhir
+    row += "#";
+
+    for (var k = 2; k <= number - 1; k++) {
+      row += " ";
+    }
+
+    row += "#";
   }
-  console.log(temp);
-  temp = "";
+
+  console.log(row);
 }
