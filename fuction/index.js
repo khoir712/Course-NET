@@ -37,17 +37,17 @@
 // }
 // console.log(cekJumlahFaktor(12));
 
-//Jawabah Coach
-// function cekJumlahFaktor(num){
-//     var faktor = 0;
-//     for(var i = 1; i <= num; i++){
-//         if(num % i === 0){
-//             faktor++
-//         }
+// //Jawabah Coach
+// function cekJumlahFaktor(num) {
+//   var faktor = 0;
+//   for (var i = 1; i <= num; i++) {
+//     if (num % i === 0) {
+//       faktor++;
 //     }
-//     return faktor
+//   }
+//   return faktor;
 // }
-// console.log(cekJumlahFaktor(12))
+// console.log(cekJumlahFaktor(12));
 
 /**
  * Study Case 2
@@ -69,17 +69,17 @@
 //   }
 // }
 
-// function cekAngkaFaktor(number) {
-//   var jumlahFaktor = 0;
-//   for (var i = 1; i <= number; i++) {
-//     if (number % i === 0) {
-//       jumlahFaktor++;
-//     }
-//   }
-//   return jumlahFaktor;
-// }
+function cekAngkaFaktor(number) {
+  var jumlahFaktor = 0;
+  for (var i = 1; i <= number; i++) {
+    if (number % i === 0) {
+      jumlahFaktor++;
+    }
+  }
+  return jumlahFaktor;
+}
 
-// console.log(cekBilanganPrima(12));
+console.log(cekAngkaFaktor(12));
 
 //Jawaban Coach
 // function cekBilanganPrima(num){
@@ -184,3 +184,21 @@
 // }
 
 // console.log(countXO("xoxoxoxoxoxo"));
+
+// function faktorAngka(number) {
+//   var faktor = [];
+
+//   for (var i = 1; i <= number; i++) {
+//     if (number % i === 0) {
+//       faktor.push(i);
+//     }
+//   }
+
+//   return faktor;
+// }
+
+// var number = 10;
+// var faktor = faktorAngka(number);
+
+// console.log("Faktor dari angka " + number + " adalah:");
+// console.log(faktor);
